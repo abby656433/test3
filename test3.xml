@@ -2,7 +2,7 @@
   <block type="controls_repeat" id="7" inline="true" x="-19" y="5">
     <value name="TIMES">
       <block type="math_number" id="31">
-        <field name="NUM">10000</field>
+        <field name="NUM">100000</field>
       </block>
     </value>
     <statement name="DO">
@@ -12,7 +12,7 @@
       <block type="controls_repeat" id="47" inline="true">
         <value name="TIMES">
           <block type="math_number" id="79">
-            <field name="NUM">10000</field>
+            <field name="NUM">100000</field>
           </block>
         </value>
         <statement name="DO">
@@ -22,7 +22,7 @@
           <block type="controls_repeat" id="86" inline="true">
             <value name="TIMES">
               <block type="math_number" id="119">
-                <field name="NUM">10000</field>
+                <field name="NUM">100000</field>
               </block>
             </value>
             <statement name="DO">
@@ -32,12 +32,28 @@
               <block type="controls_repeat" id="135" inline="true">
                 <value name="TIMES">
                   <block type="math_number" id="152">
-                    <field name="NUM">10000</field>
+                    <field name="NUM">100000</field>
                   </block>
                 </value>
                 <statement name="DO">
                   <block type="movement_right" id="145"></block>
                 </statement>
+                <next>
+                  <block type="controls_repeat" id="168" inline="true">
+                    <value name="TIMES">
+                      <block type="math_number" id="213">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="movement_forward" id="187">
+                        <next>
+                          <block type="movement_left" id="197"></block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
