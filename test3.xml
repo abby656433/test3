@@ -8,5 +8,41 @@
     <statement name="DO">
       <block type="movement_reverse" id="24"></block>
     </statement>
+    <next>
+      <block type="controls_repeat" id="47" inline="true">
+        <value name="TIMES">
+          <block type="math_number" id="79">
+            <field name="NUM">10000</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_forward" id="57"></block>
+        </statement>
+        <next>
+          <block type="controls_repeat" id="86" inline="true">
+            <value name="TIMES">
+              <block type="math_number" id="119">
+                <field name="NUM">10000</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="movement_left" id="96"></block>
+            </statement>
+            <next>
+              <block type="controls_repeat" id="135" inline="true">
+                <value name="TIMES">
+                  <block type="math_number" id="152">
+                    <field name="NUM">10000</field>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="movement_right" id="145"></block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
   </block>
 </xml>
